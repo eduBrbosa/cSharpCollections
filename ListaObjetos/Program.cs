@@ -32,6 +32,9 @@ namespace ListaObjetos
             aulas.Sort((este, outro) => este.Tempo.CompareTo(outro.Tempo));
             Imprimir(aulas);
 
+
+            
+
             Console.ReadLine();
         }
 

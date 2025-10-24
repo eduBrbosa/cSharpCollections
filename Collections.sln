@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaObjetos", "ListaObjetos\ListaObjetos.csproj", "{B0AD4252-05DB-418E-ABDE-E65DEF991E5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaSomenteLeitura", "ListaSomenteLeitura\ListaSomenteLeitura.csproj", "{86F5D1BA-903D-4FD8-A44B-1F4833F9BB68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{B0AD4252-05DB-418E-ABDE-E65DEF991E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0AD4252-05DB-418E-ABDE-E65DEF991E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0AD4252-05DB-418E-ABDE-E65DEF991E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F5D1BA-903D-4FD8-A44B-1F4833F9BB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F5D1BA-903D-4FD8-A44B-1F4833F9BB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F5D1BA-903D-4FD8-A44B-1F4833F9BB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F5D1BA-903D-4FD8-A44B-1F4833F9BB68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
