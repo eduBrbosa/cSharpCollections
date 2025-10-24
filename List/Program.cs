@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,8 +44,54 @@ namespace List
 
             aulas[0] = "Trabalhando com Listas";
             Imprimir(aulas);
+            Console.WriteLine();
+
+            Console.WriteLine($"A primeira aula 'Trabalhando' é: " +
+                $"{aulas.First(aula => aula.Contains("Trabalhando"))}");
+            
+            Console.WriteLine($"A última aula 'Trabalhando' é: " +
+                $"{aulas.Last(aula => aula.Contains("Trabalhando"))}");
+
+            Console.WriteLine($"A primeira aula 'Conclusão' é: " +
+                $"{aulas.FirstOrDefault(aula => aula.Contains("Conclusão"))}");
+
+            Console.WriteLine();
 
 
+            aulas.Reverse();
+            Imprimir(aulas);
+
+            Console.WriteLine();
+
+            aulas.Reverse();
+            Imprimir(aulas);
+
+            Console.WriteLine();
+
+            aulas.RemoveAt(aulas.Count - 1);
+            Imprimir(aulas);
+
+            Console.WriteLine();
+
+            aulas.Add("Conclusão");
+            Imprimir(aulas);
+
+
+            aulas.Sort();
+            Imprimir(aulas);
+            Console.WriteLine();
+
+            List<string> copia = aulas.GetRange(aulas.Count - 2, 2);
+            Imprimir(copia);
+            Console.WriteLine();
+
+            List<string> clone = new List<string>(aulas);
+            Imprimir(clone);
+            Console.WriteLine();
+
+            clone.RemoveRange(clone.Count - 2, 2);
+            Imprimir(clone);
+            Console.WriteLine();
 
             Console.ReadLine();
 
