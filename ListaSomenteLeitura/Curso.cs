@@ -40,9 +40,29 @@ namespace ListaSomenteLeitura
 			aulas = new List<Aula>();
         }
 
+		public int TempoTotal
+		{
+			get
+			{
+				//int total = 0;
+				//foreach(var aula in aulas)
+				//{
+				//	total += aula.Tempo;
+				//}
+				//return total;
+
+				return aulas.Sum(aula => aula.Tempo);
+			}
+		}
+
         internal void Adiciona(Aula aula)
         {
             aulas.Add(aula);
+        }
+
+        public override string ToString()
+        {
+			return $"Curso: {nome}, Tempo: {TempoTotal},\n Aulas: {string.Join(",\n", aulas)}";
         }
     }
 }
