@@ -1,0 +1,7 @@
+C:\Projetos\Collections\Collections\Sets\bin\Debug\Sets.exe.config
+C:\Projetos\Collections\Collections\Sets\bin\Debug\Sets.exe
+C:\Projetos\Collections\Collections\Sets\bin\Debug\Sets.pdb
+C:\Projetos\Collections\Collections\Sets\obj\Debug\Sets.csproj.AssemblyReference.cache
+C:\Projetos\Collections\Collections\Sets\obj\Debug\Sets.csproj.CoreCompileInputs.cache
+C:\Projetos\Collections\Collections\Sets\obj\Debug\Sets.exe
+C:\Projetos\Collections\Collections\Sets\obj\Debug\Sets.pdb
