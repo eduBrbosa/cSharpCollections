@@ -78,5 +78,10 @@ namespace SetsEmModelos
         {
 			alunos.Add(aluno);
         }
+
+		public bool EstaMatriculado(Aluno aluno)
+		{
+			return alunos.Contains(aluno);
+		}
     }
 }

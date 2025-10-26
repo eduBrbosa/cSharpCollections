@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SetsEmModelos
@@ -28,11 +29,31 @@ namespace SetsEmModelos
             Console.WriteLine("Imprimindo os alunos matriculados: ");
             foreach (var aluno in cSharpColecoes.Alunos)
             {
-                Console.WriteLine(aluno.ToString());                
+                Console.WriteLine(aluno);                
             }
+
+            Console.WriteLine($"O aluno 'a1'{a1.Nome} está matriculado?");
+
+            Console.WriteLine(cSharpColecoes.EstaMatriculado(a1));
+            Console.WriteLine();
+            
+            Aluno vic = new Aluno("Vitória Correa", 34561);
+            Console.WriteLine("Vic está matriculada?");
+            Console.WriteLine(cSharpColecoes.EstaMatriculado(vic));
+            Console.WriteLine();
+
+            Console.WriteLine("'vic' é igual a 'a1'?");
+            Console.WriteLine(a1 == vic);
+            Console.WriteLine();
+
+            Console.WriteLine("'a1' é equals a 'vic'?");
+            Console.WriteLine(a1.Equals(vic));
+
+            Console.WriteLine();
 
 
             Console.ReadLine();
+
         }
     }
 }
