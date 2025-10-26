@@ -48,8 +48,27 @@ namespace SetsEmModelos
 
             Console.WriteLine("'a1' é equals a 'vic'?");
             Console.WriteLine(a1.Equals(vic));
+            Console.WriteLine();
+
+            Console.Clear();
+
+            Console.WriteLine("Quem é o aluno com matrícula 34561");
+
+            Aluno aluno34561 = cSharpColecoes.BuscaMatriculado(34561);
+            Console.WriteLine($"aluno34561: {aluno34561}");
+
+            Console.WriteLine("Aluno 5618?");
+            Console.WriteLine(cSharpColecoes.BuscaMatriculado(5618));
 
             Console.WriteLine();
+
+            Aluno eu = new Aluno("Eu eu mesmo", 34561);
+            //cSharpColecoes.Matricula(eu);
+
+            cSharpColecoes.SubstituiAluno(eu);
+
+            Console.WriteLine("Qual aluno tem a matricula 34561?");
+            Console.WriteLine(cSharpColecoes.BuscaMatriculado(34561));
 
 
             Console.ReadLine();

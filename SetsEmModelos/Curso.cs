@@ -9,6 +9,8 @@ namespace SetsEmModelos
 {
     class Curso
     {
+		private IDictionary<int, Aluno> dicionarioAlunos = new Dictionary<int, Aluno>();
+		
 		private ISet<Aluno> alunos = new HashSet<Aluno>();
         public IList<Aluno> Alunos
 		{ 
@@ -77,11 +79,24 @@ namespace SetsEmModelos
         internal void Matricula(Aluno aluno)
         {
 			alunos.Add(aluno);
+			this.dicionarioAlunos.Add(aluno.NumeroMatricula, aluno);
         }
 
 		public bool EstaMatriculado(Aluno aluno)
 		{
 			return alunos.Contains(aluno);
 		}
+
+        internal Aluno BuscaMatriculado(int numeroMatricula)
+        {
+			Aluno aluno;
+			dicionarioAlunos.TryGetValue(numeroMatricula, out aluno);
+			return aluno;
+        }
+
+        internal void SubstituiAluno(Aluno aluno)
+        {
+			this.dicionarioAlunos[aluno.NumeroMatricula] = aluno;
+        }
     }
 }
